@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.14.2 on win32)" generated="20260115 09:41:10.098" rpa="false" schemaversion="3">
+<suite id="s1" name="Untitled-1" source="C:\Users\726546\Downloads\Robot_Env_Draft 1\Robot_Env_Draft\Tests\Untitled-1.robot">
+<test id="s1-t1" name="Test case name" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://the-internet.herokuapp.com/.edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20260115 09:41:10.405" level="INFO">Opening browser 'firefox' to base url 'https://the-internet.herokuapp.com/.edge'.</msg>
+<msg timestamp="20260115 09:41:10.407" level="INFO">Firefox driver log is always forced to to: C:\Users\726546\Downloads\Robot_Env_Draft 1\Robot_Env_Draft\Tests\geckodriver-3.log</msg>
+<msg timestamp="20260115 09:41:10.411" level="INFO">Executing: C:\Users\726546\AppData\Local\Programs\Python\Python314\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --output json</msg>
+<msg timestamp="20260115 09:41:15.180" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20260115 09:41:15.181" level="FAIL">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</msg>
+<status status="FAIL" starttime="20260115 09:41:10.404" endtime="20260115 09:41:15.190"/>
+</kw>
+<status status="FAIL" starttime="20260115 09:41:10.404" endtime="20260115 09:41:15.191">SessionNotCreatedException: Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line
+</status>
+</test>
+<status status="FAIL" starttime="20260115 09:41:10.101" endtime="20260115 09:41:15.195"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Untitled-1">Untitled-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

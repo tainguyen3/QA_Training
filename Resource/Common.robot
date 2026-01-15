@@ -1,18 +1,21 @@
-*** Settings ***
-Library            SeleniumLibrary
+*** Setting ***
+Library   SeleniumLibrary
 
+Test Setup    Set up
+Test Teardown    TearDown
 
 *** Variables ***
-${BROWSER}         edge
-${URL}             https://the-internet.herokuapp.com/
-${DROPDOW}         xpath=//*[@id="content"]/ul/li[11]/a
-${CONTEXT_MENU}    xpath=//*[@id="content"]/ul/li[7]/a
+${BROWSER}    edge
+${URL}        https://the-internet.herokuapp.com/
+${DROPDOWN}    xpath=//*[@id="content"]/ul/li[2]/a
+${BUTTON}      xpath=//*[@id="content"]/div/button
+${BUTTON2}     xpath=//*[@id="elements"]/button[3]
+${ELEMENTS2}   xpath=//*[@id="content"]/ul/li[15]/a
 
 *** Keywords ***
-Setup
-    SeleniumLibrary.Open Browser    ${URL}      ${BROWSER}        #Open Browser before each test case
+Set up
+    SeleniumLibrary.Open Browser   ${URL}    ${BROWSER}
     SeleniumLibrary.Maximize Browser Window
 
-TearDown    
-    SeleniumLibrary.Close Browser    #Close Browser after each test case
-    
+TearDown
+    SeleniumLibrary.Close All Browsers

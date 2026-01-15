@@ -1,5 +1,3 @@
-
-
 *** Settings ***
 Library     SeleniumLibrary
 
@@ -7,6 +5,8 @@ Library     SeleniumLibrary
 
 ${BROWSER}    Chrome
 ${URL}        https://the-internet.herokuapp.com/
+
+${DROPDOW}    Xpath=//a[@href='/dropdown']
 *** Keywords ***
 
 SetUp
